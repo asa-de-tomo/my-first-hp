@@ -1,253 +1,210 @@
 <!doctype html>
-<html lang="ja" class="auth-pending">
+<html lang="ja">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="宮崎県高鍋町の新山いちご園（しんやま Caffe）試作ランディングページ。自家栽培いちごのジェラート、カフェメニュー、営業日、スタッフ募集情報。"
+      content="児湯郡（高鍋町・川南町・木城町・都農町・新富町・西米良村）を中心に、地元のお店向けホームページを制作しています。"
     />
-    <title>新山いちご園 | しんやま Caffe</title>
+    <title>まちのホームページ相談所 | 地元のお店のためのHP制作</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Shippori+Mincho:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./auth.css" />
-    <script src="./auth.js" defer></script>
     <link rel="stylesheet" href="./styles.css" />
+    <script src="./app.js" defer></script>
   </head>
   <body>
-    <header class="hero" id="top">
-      <div class="hero-slide is-active" data-slide="0"></div>
-      <div class="hero-slide" data-slide="1"></div>
-      <div class="hero-slide" data-slide="2"></div>
-      <nav class="topbar" aria-label="ページ内ナビゲーション">
-        <a class="brand" href="#top" aria-label="新山いちご園トップへ">
-          <span>新山いちご園</span>
-          <small>shinyama Caffe</small>
-        </a>
-        <div class="nav-actions">
-          <a href="#menu">メニュー</a>
-          <a href="#calendar">営業日</a>
-          <a href="#access">アクセス</a>
-          <a class="nav-cta" href="#recruit">スタッフ募集</a>
-        </div>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="まちのホームページ相談所 トップへ">
+        <span class="brand-mark">町</span>
+        <span>
+          <strong>まちのホームページ相談所</strong>
+          <small>地元のお店のためのHP制作</small>
+        </span>
+      </a>
+      <nav class="header-nav" aria-label="ページ内メニュー">
+        <a href="#service">できること</a>
+        <a href="#plans">プラン</a>
+        <a href="#contact">相談する</a>
       </nav>
-
-      <div class="hero-copy">
-        <p class="eyebrow" id="heroEyebrow">Takanabe, Miyazaki</p>
-        <h1 id="heroTitle">ひとくちで、<br />とろける幸せ。</h1>
-        <p class="lead" id="heroLead">自家栽培いちごの贅沢ジェラート</p>
-      </div>
-      <a class="scroll-cue" href="#commitment" aria-label="こだわりへ移動">Scroll</a>
     </header>
 
-    <main>
-      <section class="section intro" id="commitment">
-        <div class="section-heading">
-          <p class="eyebrow">Our Promise</p>
-          <h2>私たちのこだわり</h2>
-        </div>
+    <main id="top">
+      <section class="hero section-band">
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <p class="kicker">児湯郡のお店向け</p>
+            <h1>地元のお店の<br />“伝わらない”を、<br />伝わる形に。</h1>
+            <p class="hero-lead">
+              高鍋町・川南町・木城町・都農町・新富町・西米良村を中心に、お店らしさが自然に伝わるホームページを制作しています。
+            </p>
+            <div class="hero-points" aria-label="サービスの特徴">
+              <span>情報整理から対応</span>
+              <span>スマホ対応</span>
+              <span>相談しやすい進め方</span>
+            </div>
+            <div class="hero-actions" aria-label="主な行動">
+              <a class="button primary" href="#contact">相談してみる</a>
+              <a class="button secondary" href="#flow">制作の流れを見る</a>
+            </div>
+          </div>
 
-        <div class="promise-list">
-          <article class="promise-item">
-            <span class="promise-number">01</span>
-            <h3>朝採れの新鮮いちご</h3>
-            <p>
-              高鍋の空の下で育ったいちごを、いちばん香りのよいタイミングで。果実の甘酸っぱさをそのまま楽しめる一皿へ仕立てます。
-            </p>
+          <div class="hero-visual" aria-label="地元の風景イメージ">
+            <img src="/local-river-bridge.jpg" alt="川沿いの緑と橋が見える地元の風景" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section can-do" id="service">
+        <div class="section-heading">
+          <p class="kicker">できること</p>
+          <h2>必要なことを、わかりやすく。</h2>
+        </div>
+        <div class="service-grid">
+          <article>
+            <h3>情報整理</h3>
+            <p>営業時間、サービス内容、料金、場所など、お客様が知りたいことを整理します。</p>
           </article>
-          <article class="promise-item">
-            <span class="promise-number">02</span>
-            <h3>濃厚ミルクと素材の調和</h3>
-            <p>
-              ミルクのまろやかさに、いちごやブルーベリー、自家製ジャムの華やかさを重ねて、後味までやさしい味わいに。
-            </p>
+          <article>
+            <h3>文章作成サポート</h3>
+            <p>話し言葉でも大丈夫です。聞き取りながら、自然な文章に整えます。</p>
           </article>
-          <article class="promise-item">
-            <span class="promise-number">03</span>
-            <h3>家族で立ち寄れるカフェ時間</h3>
-            <p>
-              ドライブの途中にも、週末のおやつにも。大人も子どもも笑顔になれる、親しみやすいカフェを目指しています。
-            </p>
+          <article>
+            <h3>スマホで見やすいページ作成</h3>
+            <p>スマホから見ても読みやすく、問い合わせしやすいページにします。</p>
           </article>
         </div>
       </section>
 
-      <section class="section menu" id="menu">
-        <div class="section-heading">
-          <p class="eyebrow">Menu</p>
-          <h2>お品書き</h2>
-        </div>
-
-        <div class="menu-grid">
-          <button class="menu-card" type="button" data-menu="parfait">
-            <img
-              src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=900&q=85"
-              alt="いちごとクリームを重ねたパフェ"
-            />
-            <div>
-              <p class="menu-tag">季節限定</p>
-              <h3>いちごパフェ</h3>
-              <p>完熟いちご、なめらかなクリーム、ひんやりジェラートを重ねたご褒美スイーツ。</p>
-            </div>
-          </button>
-
-          <button class="menu-card" type="button" data-menu="gelato">
-            <img
-              src="https://images.unsplash.com/photo-1567206563064-6f60f40a2b57?auto=format&fit=crop&w=900&q=85"
-              alt="カップに盛られたジェラート"
-            />
-            <div>
-              <p class="menu-tag">人気</p>
-              <h3>いちごミルクジェラート</h3>
-              <p>いちごの甘酸っぱさとミルクのコクがほどける、しんやま Caffe らしい一品。</p>
-            </div>
-          </button>
-
-          <button class="menu-card" type="button" data-menu="jam">
-            <img
-              src="https://images.unsplash.com/photo-1464965911861-746a04b4bca6?auto=format&fit=crop&w=900&q=85"
-              alt="みずみずしいいちご"
-            />
-            <div>
-              <p class="menu-tag">Farm</p>
-              <h3>生苺・自家製ジャム</h3>
-              <p>旬の果実や手作りジャムはお持ち帰りにも。贈りものにも喜ばれるやさしい甘さです。</p>
-            </div>
-          </button>
-        </div>
-      </section>
-
-      <section class="section calendar-section" id="calendar">
-        <div class="section-heading">
-          <p class="eyebrow">Calendar</p>
-          <h2>営業日のお知らせ</h2>
-        </div>
-
-        <div class="calendar-panel">
-          <div class="calendar-head">
-            <div>
-              <p class="calendar-label">今月の定休日</p>
-              <h3 id="calendarTitle">-</h3>
-            </div>
-            <span class="closed-dot">休</span>
-          </div>
-          <div class="calendar-grid weekday" aria-hidden="true">
-            <span>日</span>
-            <span>月</span>
-            <span>火</span>
-            <span>水</span>
-            <span>木</span>
-            <span>金</span>
-            <span>土</span>
-          </div>
-          <div class="calendar-grid days" id="calendarDays" aria-label="今月の営業カレンダー"></div>
-          <p class="calendar-note">定休日は公開情報に基づく目安です。最新の営業日はInstagram等でご確認ください。</p>
-          <div class="sns-gallery" aria-label="Instagram最新投稿のイメージ">
-            <img src="https://images.unsplash.com/photo-1464965911861-746a04b4bca6?auto=format&fit=crop&w=500&q=80" alt="新鮮ないちごの投稿イメージ" />
-            <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=500&q=80" alt="いちごスイーツの投稿イメージ" />
-            <img src="https://images.unsplash.com/photo-1567206563064-6f60f40a2b57?auto=format&fit=crop&w=500&q=80" alt="ジェラートの投稿イメージ" />
-            <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=500&q=80" alt="アイスクリームの投稿イメージ" />
-            <img src="https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?auto=format&fit=crop&w=500&q=80" alt="コーンアイスの投稿イメージ" />
-            <img src="https://images.unsplash.com/photo-1518635017498-87f514b751ba?auto=format&fit=crop&w=500&q=80" alt="カフェスイーツの投稿イメージ" />
-          </div>
-          <a class="button instagram" href="https://www.instagram.com/explore/search/keyword/?q=%E6%96%B0%E5%B1%B1%E3%81%84%E3%81%A1%E3%81%94%E5%9C%92" target="_blank" rel="noreferrer">
-            Instagramで最新情報を見る
-          </a>
-        </div>
-      </section>
-
-      <section class="recruit" id="recruit">
-        <div class="recruit-inner">
-          <p class="eyebrow">Recruit</p>
-          <h2>一緒にお店を盛り上げませんか？<br />スタッフ募集</h2>
+      <section class="section story section-band" id="story">
+        <div class="story-simple">
+          <p class="kicker">大切にしていること</p>
+          <h2>はじめてのお客様にも、迷わず伝わる形へ。</h2>
           <p>
-            新山いちご園では、お客様に笑顔をお届けするスタッフ（アルバイト・パート）を募集しています。未経験でも、いちごやスイーツが大好きな方なら大歓迎です！アットホームな職場で一緒に働きませんか？
+            ホームページは、お店のことを伝える案内板のようなものだと思っています。
           </p>
-          <div class="recruit-actions">
-            <a class="button primary" href="tel:0983223180">電話で問い合わせる</a>
-            <a class="button outline" href="#access">店舗情報を見る</a>
-          </div>
+          <p>
+            むずかしい言葉を使わず、今ある情報を一緒に整理しながら、そのお店らしさが自然に伝わる形へ整えていきます。
+          </p>
         </div>
       </section>
 
-      <section class="section access" id="access">
+      <section class="section" id="plans">
         <div class="section-heading">
-          <p class="eyebrow">Access</p>
-          <h2>店舗情報・アクセス</h2>
+          <p class="kicker">料金の目安</p>
+          <h2>基本ホームページ制作</h2>
         </div>
+        <div class="plan-box">
+          <article class="plan-main">
+            <div>
+              <p class="plan-text">
+                必要な情報を整理しながら、見やすく伝わるホームページを制作します。
+              </p>
+            </div>
+            <p class="price"><span>目安</span> 15万円〜</p>
+            <ul class="plan-items">
+              <li>TOPページ</li>
+              <li>お店情報</li>
+              <li>スマホ対応</li>
+              <li>お問い合わせ導線</li>
+              <li>基本文章整理</li>
+            </ul>
+          </article>
 
-        <dl class="shop-info">
-          <div>
-            <dt>店名</dt>
-            <dd>新山いちご園（しんやま Caffe）</dd>
+          <div class="option-box">
+            <p class="option-title">オプション例</p>
+            <ul>
+              <li>Googleマップ整理</li>
+              <li>Instagram導線整理</li>
+              <li>お知らせ更新</li>
+              <li>写真整理</li>
+            </ul>
+            <p>必要に応じてご相談可能です。</p>
           </div>
-          <div>
-            <dt>住所</dt>
-            <dd>宮崎県児湯郡高鍋町大字上江6649-100</dd>
-          </div>
-          <div>
-            <dt>営業時間</dt>
-            <dd>10:00〜17:00</dd>
-          </div>
-          <div>
-            <dt>定休日</dt>
-            <dd>月曜・木曜目安（最新情報をご確認ください）</dd>
-          </div>
-          <div>
-            <dt>電話</dt>
-            <dd><a href="tel:0983223180">0983-22-3180</a></dd>
-          </div>
-        </dl>
-
-        <div class="map-frame" aria-label="新山いちご園の地図">
-          <iframe
-            title="新山いちご園 Google Map"
-            src="https://www.google.com/maps?q=%E6%96%B0%E5%B1%B1%E3%81%84%E3%81%A1%E3%81%94%E5%9C%92%20%E5%AE%AE%E5%B4%8E%E7%9C%8C%E5%85%90%E6%B9%AF%E9%83%A1%E9%AB%98%E9%8D%8B%E7%94%BA%E5%A4%A7%E5%AD%97%E4%B8%8A%E6%B1%9F6649-100&output=embed"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
         </div>
+        <p class="plans-note">公開後の更新や管理についても、必要に応じてご相談可能です。</p>
+      </section>
 
-        <a
-          class="map-button"
-          href="https://www.google.com/maps/search/?api=1&query=%E6%96%B0%E5%B1%B1%E3%81%84%E3%81%A1%E3%81%94%E5%9C%92%20%E5%AE%AE%E5%B4%8E%E7%9C%8C%E5%85%90%E6%B9%AF%E9%83%A1%E9%AB%98%E9%8D%8B%E7%94%BA%E5%A4%A7%E5%AD%97%E4%B8%8A%E6%B1%9F6649-100"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Google Mapでルート案内を見る
-        </a>
+      <section class="section flow section-band" id="flow">
+        <div class="section-heading">
+          <p class="kicker">制作の流れ</p>
+        </div>
+        <ol class="flow-list">
+          <li>相談</li>
+          <li>ヒアリング</li>
+          <li>構成作成</li>
+          <li>制作</li>
+          <li>確認・修正</li>
+          <li>公開</li>
+        </ol>
+      </section>
+
+      <section class="section faq" id="faq">
+        <div class="section-heading">
+          <p class="kicker">よくある質問</p>
+          <h2>よく聞かれること。</h2>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>文章が苦手でも大丈夫ですか？</summary>
+            <p>大丈夫です。お話を聞きながら、自然でわかりやすい文章に整えます。</p>
+          </details>
+          <details>
+            <summary>写真が少なくても大丈夫ですか？</summary>
+            <p>今ある写真を活かしつつ、必要な写真や撮り方も一緒に考えます。</p>
+          </details>
+          <details>
+            <summary>相談だけでもいいですか？</summary>
+            <p>もちろんです。まだ作るか迷っている段階でも、お気軽にご相談ください。</p>
+          </details>
+        </div>
+      </section>
+
+      <section class="section contact section-band" id="contact">
+        <div class="contact-inner">
+          <div>
+            <p class="kicker">お問い合わせ</p>
+            <h2>相談する</h2>
+            <p>
+              「HPが必要かわからない」「何から準備すればいいかわからない」でも大丈夫です。わかる範囲で送ってください。
+            </p>
+          </div>
+          <form class="contact-form" aria-label="お問い合わせフォーム">
+            <label>
+              <span>お名前</span>
+              <input type="text" name="name" placeholder="例：山田 太郎" autocomplete="name" required />
+            </label>
+            <label>
+              <span>店舗名・会社名</span>
+              <input type="text" name="shop" placeholder="例：山田工務店" autocomplete="organization" />
+            </label>
+            <label>
+              <span>メールアドレス</span>
+              <input type="email" name="email" placeholder="例：info@example.com" autocomplete="email" required />
+            </label>
+            <label>
+              <span>相談内容</span>
+              <textarea name="message" rows="5" placeholder="例：公式HPがなく、サービス内容をわかりやすく載せたいです。" required></textarea>
+            </label>
+            <input type="hidden" name="_subject" value="【まちのホームページ相談所】お問い合わせがありました" />
+            <button class="button primary form-button" type="submit">この内容で相談する</button>
+            <p class="form-status" aria-live="polite"></p>
+            <p class="form-note">メールのみで受け付けています。内容を確認後、3日以内を目安にご連絡します。</p>
+          </form>
+        </div>
       </section>
     </main>
 
-    <footer class="footer">
-      <p>© 新山いちご園 All Rights Reserved.</p>
-      <small>※本サイトは提案用の試作ページです</small>
-    </footer>
-
-    <dialog class="menu-modal" id="menuModal" aria-labelledby="modalTitle">
-      <button class="modal-close" type="button" aria-label="閉じる">×</button>
-      <img id="modalImage" src="" alt="" />
-      <div class="modal-body">
-        <p class="menu-tag" id="modalTag"></p>
-        <h2 id="modalTitle"></h2>
-        <p id="modalText"></p>
-        <dl class="modal-detail">
-          <div>
-            <dt>おすすめ</dt>
-            <dd id="modalRecommend"></dd>
-          </div>
-          <div>
-            <dt>提供</dt>
-            <dd id="modalSeason"></dd>
-          </div>
-        </dl>
+    <footer class="site-footer">
+      <div>
+        <p>まちのホームページ相談所</p>
+        <small>児湯郡（高鍋町・川南町・木城町・都農町・新富町・西米良村）周辺で、地元のお店向けホームページ制作を行っています。</small>
       </div>
-    </dialog>
-
-    <script src="./app.js"></script>
+      <a href="#top">ページの上へ戻る</a>
+    </footer>
   </body>
 </html>
